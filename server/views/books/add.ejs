@@ -1,0 +1,72 @@
+<% include ../partials/header.ejs %>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-3 col-md-6">
+      <h1><%= title%></h1>
+
+      <form class="form" method="POST">
+        <div class="form-group">
+          <lable for="TitleTextField">Title</lable>
+          <input
+            type="text"
+            class="form-control"
+            id="TitleTextField"
+            placeholder="Enter Title"
+            name="Title"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <lable for="PriceTextField">Price</lable>
+          <input
+            type="number"
+            class="form-control"
+            id="PriceTextField"
+            placeholder="Enter Price"
+            name="Price"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <lable for="AuthorTextField">Author</lable>
+          <input
+            type="text"
+            class="form-control"
+            id="AuthorTextField"
+            placeholder="Enter Author"
+            name="Author"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <lable for="GenreTextField">Genre</lable>
+          <input
+            type="text"
+            class="form-control"
+            id="GenreTextField"
+            placeholder="Enter Genre"
+            name="Genre"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+         <i class="fa fa-check"></i> Submit
+        </button>
+
+        <a href="/contact-list" class="btn btn-warning">
+          <i class="fa fa-undo"></i> Cancle</a
+        >
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<% include ../partials/footer.ejs %>
