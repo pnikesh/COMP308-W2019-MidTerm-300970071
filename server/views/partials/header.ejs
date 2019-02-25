@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><%= title %></title>
+    <link rel="icon" type="image/x-icon" href="/client/favicon.ico">
     <!-- CSS SECTION -->
     <link rel="stylesheet" href="/Scripts/lib/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css">
@@ -39,6 +40,16 @@
           <% } else { %>
             <li><a href="/books"><i class="fa fa-book fa-lg">
             </i> Books List</a></li>
+          <% } %>
+
+          <% if(typeof displayName == 'string' && displayName) { %>
+            <li class="navbar-text"><i class="fa fa-lg fa-user"></i> 
+              Welcome, <%= displayName %></li>
+            <li class="nav-item"><a href="/logout" class="nav-link">
+              <i class="fas fa-lg fa-sign-out-alt"></i> Logout</a></li>
+          <% } else { %>
+            <li class="nav-item"><a href="/login" class="nav-link">
+              <i class="fas fa-lg fa-sign-in-alt"></i> Login</a></li>
           <% } %>
 
       </ul>
