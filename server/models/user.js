@@ -1,4 +1,9 @@
 // require modules for our User Model
+/*
+ model/user.js
+ Nikesh Patel
+ 300970071
+*/
 let mongoose = require("mongoose");
 let passportLocalMongoose = require("passport-local-mongoose");
 

@@ -1,3 +1,8 @@
+/*
+ model/books.js
+ Nikesh Patel
+ 300970071
+*/
 let mongoose = require('mongoose');
 
 // create a model class
